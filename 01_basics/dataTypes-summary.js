@@ -12,7 +12,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id == anotherId);
+// console.log(id == anotherId);
 
 const bigNumber = 74545649869465655654n
 
@@ -37,3 +37,31 @@ const myFunctions = function(){
 
 // Link to chekc data types into JavaScript Official Documentation
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory Stack
+// stack (Primitive), Heap(Non-Primitive)
+
+let myDesignation = "Data Analyst"
+
+let anotherDesignation = myDesignation
+anotherDesignation = "Software Developer"
+
+console.log(myDesignation);
+console.log(anotherDesignation);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "usr@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "amit@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
